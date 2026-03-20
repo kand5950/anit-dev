@@ -41,7 +41,7 @@ export const personal = {
   initials:    "AK",
   location:    "Toronto, Canada",
   email:       "akandasamy10@myseneca.ca",
-  avatar:      "/image-anit.jpg",
+  avatar:      "/image-anit.jpeg",
   resumeUrl:   "#",
   available:   true,
 
