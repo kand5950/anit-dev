@@ -2,7 +2,6 @@
  * @file src/components/layout/Footer.tsx
  *
  * Simple footer showing copyright and name.
- * This is a Server Component (no "use client") — no interactivity needed.
  */
 
 import { personal } from "@/data/portfolio";

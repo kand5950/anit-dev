@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     title:       "Anit — Software Developer",
     description: "Full-stack developer • React • Node.js • TypeScript",
-    url:         "https://anit.dev",   // ← update to your Vercel URL
+    url:         "https://anit-dev-khaki.vercel.app",
     siteName:    "Anit Portfolio",
     type:        "website",
   },

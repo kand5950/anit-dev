@@ -181,8 +181,6 @@ export default function Hero() {
             {/*
              * Avatar ring — the ::before pseudo-element (managed via globals.css)
              * creates the rotating conic-gradient ring effect.
-             * To use a real photo: replace the emoji with:
-             *   <Image src="/avatar.jpg" alt="Alex Chen" fill className="object-cover rounded-full" />
              */}
             <div
               className="w-52 h-52 rounded-full border-2 border-accent flex items-center

@@ -8,7 +8,7 @@
 
 export interface Project {
   id: number;
-  number: string;           // Display label e.g. "PROJECT 01"
+  number: string;           // Display label 
   title: string;
   description: string;
   tags: string[];           // Tech stack tags
@@ -53,7 +53,6 @@ export const personal = {
 
   bio: [
     `Hi! I'm <strong>Anit</strong>, a software developer based in <strong>Toronto, Canada</strong>. I specialize in building full-stack web applications with a strong focus on performance and user experience.`,
-    `With <strong>1 year</strong> of professional experience, I've worked across early-stage startups and enterprise teams, shipping features used by thousands of people every day.`,
     `Outside of work I enjoy sports, hiking/cycling, and watching anime.`,
   ],
 };

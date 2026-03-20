@@ -1,7 +1,7 @@
 /**
  * @file src/components/ui/SectionHeader.tsx
  *
- * Renders the small numbered label (e.g. "01 / about me") above
+ * Renders the small numbered label
  * every section title. Keeps heading styles consistent site-wide.
  */
 

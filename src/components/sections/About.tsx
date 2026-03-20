@@ -51,7 +51,7 @@ export default function About() {
             ))}
             <div className="pt-2">
               <Button as="a" href={personal.resumeUrl} variant="ghost">
-                ↓ Download résumé
+                ↓ Download resume
               </Button>
             </div>
           </motion.div>
