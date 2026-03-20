@@ -146,7 +146,7 @@ export const skillCategories: SkillCategory[] = [
 // ── Social Links ───────────────────────────────────────────────────────────
 
 export const socialLinks: SocialLink[] = [
-  { label: "GitHub",   icon: "⌥", url: "#" },
+  { label: "GitHub",   icon: "⌥", url: "https://github.com/kand5950" },
   { label: "LinkedIn", icon: "in", url: "#" },
   { label: "Twitter",  icon: "𝕏",  url: "#" },
 ];
