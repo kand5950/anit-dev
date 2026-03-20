@@ -40,8 +40,8 @@ export const personal = {
   lastName:    "K",
   initials:    "AK",
   location:    "Toronto, Canada",
-  email:       "example@gmail.com",
-  avatar:      "🧑‍💻",
+  email:       "akandasamy10@myseneca.ca",
+  avatar:      "/image-anit.jpg",
   resumeUrl:   "#",
   available:   true,
 
