@@ -26,7 +26,7 @@ const cardContainer = {
 /** Individual card animation */
 const cardItem = {
   hidden: { opacity: 0, y: 32 },
-  show:   { opacity: 1, y: 0, transition: { duration: 0.55, ease: "easeOut" } },
+  show:   { opacity: 1, y: 0, transition: { duration: 0.55, ease: "easeOut" as const} },
 };
 
 // ── Component ──────────────────────────────────────────────────────────────
