@@ -1,0 +1,70 @@
+/* src/app/globals.css
+   Global styles and CSS custom properties (design tokens).
+   Tailwind base/components/utilities are injected below.
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Design tokens ────────────────────────────────────────────────────────── */
+:root {
+  --font-syne:       'Syne', sans-serif;
+  --font-jetbrains:  'JetBrains Mono', monospace;
+}
+
+/* ── Base resets ──────────────────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #080b10;
+  color: #cdd9e5;
+  font-family: var(--font-jetbrains);
+  overflow-x: hidden;
+}
+
+/* ── Grid-dot background texture ─────────────────────────────────────────── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(circle at 1px 1px, #1e2d3d 1px, transparent 0);
+  background-size: 32px 32px;
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── Ambient glow orb (top-left) ──────────────────────────────────────────── */
+body::after {
+  content: '';
+  position: fixed;
+  top: -200px;
+  left: -200px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, #00e5ff18 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── Cursor blink for typewriter ──────────────────────────────────────────── */
+@keyframes cursor-blink {
+  50% { border-color: transparent; }
+}
+
+.typed-cursor {
+  border-right: 2px solid #00e5ff;
+  animation: cursor-blink 0.8s step-end infinite;
+  padding-right: 3px;
+}
+
+/* ── Avatar spinning ring ─────────────────────────────────────────────────── */
+@keyframes ring-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ── Scroll-reveal base state ─────────────────────────────────────────────── */
+/* JS adds `data-visible` attribute; Framer Motion overrides with its own transform */
