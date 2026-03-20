@@ -7,6 +7,7 @@
 
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { personal } from "@/data/portfolio";
@@ -182,13 +183,23 @@ export default function Hero() {
              * Avatar ring — the ::before pseudo-element (managed via globals.css)
              * creates the rotating conic-gradient ring effect.
              */}
-            <div
-              className="w-52 h-52 rounded-full border-2 border-accent flex items-center
-                         justify-content-center text-6xl shadow-glow bg-surface2 relative overflow-hidden"
-              style={{ justifyContent: "center" }}
-            >
-              {personal.avatar}
-            </div>
+            <div className="relative w-52 h-52 rounded-full border-2 border-accent shadow-glow overflow-hidden bg-surface2 flex items-center justify-center">
+  {personal.avatar.startsWith("/") ? (
+    // avatar is a file path → render real photo
+    // fill fills the parent circle, object-cover crops without stretching
+    <Image
+      src={personal.avatar}
+      alt={`${personal.firstName} ${personal.lastName}`}
+      fill
+      className="object-cover"
+      priority
+      sizes="208px"
+    />
+  ) : (
+    // avatar is an emoji → render as fallback until you add a real photo
+    <span className="text-6xl">{personal.avatar}</span>
+  )}
+</div>
           </motion.div>
 
         </div>
