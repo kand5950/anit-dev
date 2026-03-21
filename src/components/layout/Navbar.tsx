@@ -73,7 +73,7 @@ export default function Navbar() {
           {personal.initials}<span className="text-accent">.</span>
         </span>
 
-        {/* Nav links — hidden on mobile (add a hamburger menu if needed) */}
+        {/* Nav links — hidden on mobile */}
         <ul className="hidden md:flex gap-8">
           {NAV_LINKS.map(({ label, href }) => (
             <li key={href}>
